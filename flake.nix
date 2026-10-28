@@ -2,7 +2,7 @@
 	description = "Krysteq's Additional NixOS Modules";
 
 	inputs = {
-		nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
+		nixpkgs.url = "github:nixos/nixpkgs?ref=nixpkgs-unstable";
 
 		# home-manager = {
 		# 	url = "github:nix-community/home-manager";
@@ -17,6 +17,7 @@
 			default = import ./modules;
 
 			brave = import ./modules/brave.nix;
+			websites = import ./modules/websites.nix;
 		};
 	};
 }
